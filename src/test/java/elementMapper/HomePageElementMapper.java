@@ -22,5 +22,9 @@ public class HomePageElementMapper {
     sem um findby
      */
 
+    //@FindBy(id = "search_query_top")
+    public WebElement search_query_top;
 
+    @FindBy(css = "button.btn.btn-default.button-search")
+    public WebElement submit_search;
 }

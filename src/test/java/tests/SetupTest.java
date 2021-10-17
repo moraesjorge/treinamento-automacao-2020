@@ -1,9 +1,12 @@
 package tests;
 
+import org.hamcrest.CoreMatchers;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.SearchPage;
 import utils.Browser;
 import utils.Utils;
 
@@ -76,6 +79,25 @@ public class SetupTest extends BaseTests {
         System.out.println("Click cart");
         assertTrue(Browser.getCurrentDriver().getCurrentUrl().equals(Utils.getBaseUrl().concat("index.php?controller=order")));
         */
+    }
+
+    @Test
+    public void testSearch() {
+
+        String quest = "DRESS";
+        String questResultQtd = "7";
+
+        //Iniciar as páginas
+        HomePage home = new HomePage();
+        SearchPage search = new SearchPage();
+
+        //Fazer a pesquisa
+        home.doSearch(quest);
+
+        //Validar a pesquisa
+        Assert.assertTrue(search.isSearchPage());
+        Assert.assertEquals(search.getTextLighter().replace("\"", ""), quest);
+        Assert.assertThat(search.getTextHeading_counter(), CoreMatchers.containsString(questResultQtd));
     }
 
 }
