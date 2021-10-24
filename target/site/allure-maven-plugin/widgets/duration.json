@@ -1,0 +1,61 @@
+[ {
+  "uid" : "78a1ce0f95848e30",
+  "name" : "testSearch",
+  "time" : {
+    "start" : 1635075396539,
+    "stop" : 1635075408335,
+    "duration" : 11796
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ebb4e316134580e4",
+  "name" : "testAcessarCategoriaTshirts",
+  "time" : {
+    "start" : 1635075370448,
+    "stop" : 1635075379876,
+    "duration" : 9428
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b56255d53cf3646",
+  "name" : "testLogin",
+  "time" : {
+    "start" : 1635075340539,
+    "stop" : 1635075354651,
+    "duration" : 14112
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8816a314f135602",
+  "name" : "testAddProductToCartPage",
+  "time" : {
+    "start" : 1635075379876,
+    "stop" : 1635075396523,
+    "duration" : 16647
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69c3625b9465bc50",
+  "name" : "testAddProductToProductPage",
+  "time" : {
+    "start" : 1635075354666,
+    "stop" : 1635075370432,
+    "duration" : 15766
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "341440379545ee8c",
+  "name" : "testOpeningBrowserAndLoadingPage",
+  "time" : {
+    "start" : 1635075326084,
+    "stop" : 1635075340446,
+    "duration" : 14362
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

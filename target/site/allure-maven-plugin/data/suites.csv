@@ -1,0 +1,7 @@
+"Status","Name","Duration in ms","Description"
+"passed","tests.SetupTest.testSearch","11796",""
+"passed","tests.SetupTest.testAcessarCategoriaTshirts","9428",""
+"passed","tests.SetupTest.testLogin","14112",""
+"passed","tests.SetupTest.testAddProductToCartPage","16647",""
+"passed","tests.SetupTest.testAddProductToProductPage","15766",""
+"passed","tests.SetupTest.testOpeningBrowserAndLoadingPage","14362",""

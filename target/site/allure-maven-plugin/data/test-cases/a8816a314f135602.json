@@ -1,0 +1,55 @@
+{
+  "uid" : "a8816a314f135602",
+  "name" : "testAddProductToCartPage",
+  "fullName" : "tests.SetupTest.testAddProductToCartPage",
+  "historyId" : "19c593cc0705d806f1ddae8bfda5cdd5",
+  "time" : {
+    "start" : 1635075379876,
+    "stop" : 1635075396523,
+    "duration" : 16647
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SetupTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testAddProductToCartPage"
+  }, {
+    "name" : "suite",
+    "value" : "tests.SetupTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-K4G33U83"
+  }, {
+    "name" : "thread",
+    "value" : "15784@LAPTOP-K4G33U83.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a8816a314f135602.json",
+  "parameterValues" : [ ]
+}

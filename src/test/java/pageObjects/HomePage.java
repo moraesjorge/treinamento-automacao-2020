@@ -35,4 +35,9 @@ public class HomePage extends HomePageElementMapper {
         clickSubmit_search();
     }
 
+    public void clickCategoryTShirts() {
+        Browser.getCurrentDriver().findElement(By.linkText("T-SHIRTS")).click();
+        //menuTshirts.click();
+    }
+
 }

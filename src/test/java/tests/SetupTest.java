@@ -4,9 +4,7 @@ import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import pageObjects.HomePage;
-import pageObjects.LoginPage;
-import pageObjects.SearchPage;
+import pageObjects.*;
 import utils.Browser;
 import utils.Utils;
 
@@ -100,4 +98,63 @@ public class SetupTest extends BaseTests {
         Assert.assertThat(search.getTextHeading_counter(), CoreMatchers.containsString(questResultQtd));
     }
 
+    @Test
+    public void testAcessarCategoriaTshirts() {
+
+        //Iniciar as páginas
+        HomePage home = new HomePage();
+        CategoryPage category = new CategoryPage();
+
+        //Clicar na categoria T-SHIRTS
+        home.clickCategoryTShirts();
+
+        //Validar se ao clicar na categoria T-SHIRTS ocorre o direcionamento correto
+        assertTrue(category.isPageTshirts());
+    }
+
+    @Test
+    public void testAddProductToProductPage() {
+        //Acessar a categoria T-Shirts
+        testAcessarCategoriaTshirts();
+
+        //Iniciar as páginas
+        CategoryPage category = new CategoryPage();
+        ProductPage pdp = new ProductPage();
+
+        //Salva nome do produto na página de categoria
+        String nameProductCategory = category.getProductNameCategory();
+
+        //Clicar em MORE e direcionar à página de produto
+        category.clickProductAddToProductPage();
+
+        //Verificar se o produto está na página de detalhes
+        assertTrue(pdp.getProductNamePDP().equals(nameProductCategory));
+    }
+
+    @Test
+    public void testAddProductToCartPage() {
+        //Acessar a página de produto
+        testAddProductToProductPage();
+        System.out.println("Acessou a página de produto");
+
+        //Iniciar as páginas
+        ProductPage pdp = new ProductPage();
+        CartPage cart = new CartPage();
+        System.out.println("Iniciou as páginas");
+
+        //Salvar o nome do produto na página de PDP
+        String nameProductPDP = pdp.getProductNamePDP();
+        System.out.println("Salvou o nome do produto na página de PDP");
+
+        //Clicar no botão de Adicionar ao carrinho
+        pdp.clickButtonAddToCart();
+        System.out.println("Clicou no botão de adicionar ao carrinho");
+
+
+        //Clicar no botão Proceed To Checkout da modal
+        pdp.clickButtonModalProceedToCheckout();
+
+        //validação do nome do produto no carrinho
+        assertTrue(cart.getNameProductCart().equals(nameProductPDP));
+    }
 }

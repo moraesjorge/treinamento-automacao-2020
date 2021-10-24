@@ -1,0 +1,55 @@
+{
+  "uid" : "ebb4e316134580e4",
+  "name" : "testAcessarCategoriaTshirts",
+  "fullName" : "tests.SetupTest.testAcessarCategoriaTshirts",
+  "historyId" : "96287c0f97e95c7148be57ddeff38aa8",
+  "time" : {
+    "start" : 1635075370448,
+    "stop" : 1635075379876,
+    "duration" : 9428
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SetupTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testAcessarCategoriaTshirts"
+  }, {
+    "name" : "suite",
+    "value" : "tests.SetupTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-K4G33U83"
+  }, {
+    "name" : "thread",
+    "value" : "15784@LAPTOP-K4G33U83.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ebb4e316134580e4.json",
+  "parameterValues" : [ ]
+}
